@@ -1,10 +1,5 @@
 import { getStore } from "@netlify/blobs";
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const seedContent = JSON.parse(readFileSync(join(__dirname, "seed-content.json"), "utf-8"));
+import seedContent from "./seed-content.js";
 
 const BLOB_KEY = "content";
 const STORE_NAME = "meridian-energy-content";
