@@ -1,0 +1,73 @@
+import { getStore } from "@netlify/blobs";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const seedContent = JSON.parse(readFileSync(join(__dirname, "seed-content.json"), "utf-8"));
+
+const BLOB_KEY = "content";
+const STORE_NAME = "meridian-energy-content";
+
+const headers = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, PUT, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
+
+export const handler = async (event) => {
+  const store = getStore(STORE_NAME);
+
+  if (event.httpMethod === "OPTIONS") {
+    return { statusCode: 204, headers };
+  }
+
+  if (event.httpMethod === "GET") {
+    try {
+      let data = await store.get(BLOB_KEY, { type: "json" });
+      if (!data) {
+        // First run in this site: seed from the bundled starter content.
+        data = seedContent;
+        await store.setJSON(BLOB_KEY, data);
+      }
+      return {
+        statusCode: 200,
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      };
+    } catch (err) {
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ error: "Failed to read content", detail: String(err && err.message || err) }),
+      };
+    }
+  }
+
+  if (event.httpMethod === "PUT") {
+    try {
+      const next = JSON.parse(event.body || "{}");
+      if (!next || typeof next !== "object") {
+        return {
+          statusCode: 400,
+          headers,
+          body: JSON.stringify({ error: "Invalid content payload" }),
+        };
+      }
+      await store.setJSON(BLOB_KEY, next);
+      return {
+        statusCode: 200,
+        headers: { ...headers, "Content-Type": "application/json" },
+        body: JSON.stringify(next),
+      };
+    } catch (err) {
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ error: "Failed to save content", detail: String(err && err.message || err) }),
+      };
+    }
+  }
+
+  return { statusCode: 405, headers, body: "Method Not Allowed" };
+};

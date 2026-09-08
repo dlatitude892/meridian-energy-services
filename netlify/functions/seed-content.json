@@ -1,0 +1,719 @@
+{
+  "siteSettings": {
+    "heroHeadline": "Engineering Energy. Delivering Performance.",
+    "heroSubheadline": "International oil & gas contracting, engineering, equipment supply, field services and project solutions delivered safely and efficiently across the globe.",
+    "aboutHeading": "Integrated solutions for operators worldwide",
+    "aboutBody": "Meridian Energy Services provides integrated engineering, contracting, equipment and field-services solutions to oil & gas operators, EPC contractors, drilling contractors, energy companies, and industrial clients. From our headquarters in Houston, Texas, our teams support projects across North America, South America, Europe, Africa, the Middle East, and Asia-Pacific — combining technical expertise with a disciplined, safety-first approach to every assignment.",
+    "stats": [
+      {
+        "label": "Years Experience",
+        "value": 25,
+        "suffix": "+"
+      },
+      {
+        "label": "Countries",
+        "value": 30,
+        "suffix": "+"
+      },
+      {
+        "label": "Projects Delivered",
+        "value": 150,
+        "suffix": "+"
+      },
+      {
+        "label": "Personnel",
+        "value": 1000,
+        "suffix": "+"
+      }
+    ],
+    "sustainability": "Meridian Energy Services is committed to responsible, low-impact operations across every project we deliver. We work with clients to reduce emissions intensity, minimize waste and water use, protect biodiversity around our work sites, and support the communities where we operate — from local hiring and training programs to transparent environmental reporting. Our engineering teams evaluate energy efficiency and emissions at the design stage of every project, and our field operations follow strict waste-management and spill-prevention protocols across offshore and onshore sites alike.",
+    "safety": "Safety is the foundation of everything Meridian Energy Services does. Our HSE management system is built around proactive hazard identification, rigorous permit-to-work controls, continuous crew training and certification, and a company-wide stop-work authority that empowers every employee to halt any activity they believe is unsafe. We track leading and lagging indicators across all regions, conduct regular audits of contractors and subcontractors, and hold every site — offshore platform, onshore field, workshop, or warehouse — to the same uncompromising standard.",
+    "footerText": "Meridian Energy Services delivers integrated oil & gas contracting, engineering, equipment supply and field services to operators across six continents.",
+    "contact": {
+      "hqPhone": "+1 (713) 555-0142",
+      "hqEmail": "info@meridianenergyservices.com",
+      "projectsEmail": "projects@meridianenergyservices.com",
+      "vendorEmail": "procurement@meridianenergyservices.com",
+      "careersEmail": "careers@meridianenergyservices.com"
+    }
+  },
+  "services": [
+    {
+      "id": "sv1",
+      "slug": "oil-gas-contracting",
+      "title": "Oil & Gas Contracting",
+      "icon": "Flame",
+      "category": "Contracting",
+      "shortDesc": "Full-scope contracting for upstream, midstream and downstream operators.",
+      "description": "Meridian delivers turnkey and call-off contracting services across the upstream, midstream and downstream value chain, mobilizing crews, equipment and technical management to operator and EPC specifications on time and on budget."
+    },
+    {
+      "id": "sv2",
+      "slug": "drilling-rig-support",
+      "title": "Drilling & Rig Support",
+      "icon": "Drill",
+      "category": "Drilling",
+      "shortDesc": "Rig-up, rig-down, and technical support for land and offshore drilling programs.",
+      "description": "Our drilling support teams provide rig-up/rig-down crews, well-site supervision, technical support personnel and specialized equipment for land and offshore drilling campaigns worldwide."
+    },
+    {
+      "id": "sv3",
+      "slug": "offshore-services",
+      "title": "Offshore Services",
+      "icon": "Ship",
+      "category": "Offshore",
+      "shortDesc": "Platform, subsea and marine support services for offshore operators.",
+      "description": "From platform maintenance to subsea intervention support and marine coordination, our offshore division supports fixed and floating installations across deepwater and shelf environments."
+    },
+    {
+      "id": "sv4",
+      "slug": "onshore-field-services",
+      "title": "Onshore Field Services",
+      "icon": "Truck",
+      "category": "Onshore",
+      "shortDesc": "Wellsite, facility and pipeline field crews for onshore operations.",
+      "description": "We field trained, certified crews for onshore well-site operations, production facility support, and pipeline right-of-way work across every region we serve."
+    },
+    {
+      "id": "sv5",
+      "slug": "engineering-technical-services",
+      "title": "Engineering & Technical Services",
+      "icon": "Cpu",
+      "category": "Engineering",
+      "shortDesc": "Front-end, detailed and technical engineering across all disciplines.",
+      "description": "Our engineering group provides FEED, detailed design, process, mechanical, electrical, instrumentation and civil engineering services for greenfield and brownfield oil & gas projects."
+    },
+    {
+      "id": "sv6",
+      "slug": "machinery-equipment-supply",
+      "title": "Machinery & Equipment Supply",
+      "icon": "Package",
+      "category": "Equipment",
+      "shortDesc": "Sourcing and supply of industrial and oilfield machinery worldwide.",
+      "description": "Meridian sources, inspects and supplies rotating equipment, pressure vessels, wellheads, valves and industrial machinery from qualified manufacturers to meet project specifications and delivery schedules."
+    },
+    {
+      "id": "sv7",
+      "slug": "heavy-equipment-rental",
+      "title": "Heavy Equipment Rental",
+      "icon": "Boxes",
+      "category": "Equipment",
+      "shortDesc": "Rental fleets of cranes, generators, compressors and heavy machinery.",
+      "description": "Our rental fleet — cranes, generators, air compressors, forklifts and specialized lifting equipment — is maintained to strict inspection standards and available for short- and long-term project deployment."
+    },
+    {
+      "id": "sv8",
+      "slug": "equipment-maintenance-repair",
+      "title": "Equipment Maintenance & Repair",
+      "icon": "Wrench",
+      "category": "Maintenance",
+      "shortDesc": "Preventive and corrective maintenance for rotating and static equipment.",
+      "description": "We provide scheduled preventive maintenance, shutdown/turnaround support, and corrective repair services for rotating and static equipment across production and processing facilities."
+    },
+    {
+      "id": "sv9",
+      "slug": "pipeline-infrastructure-services",
+      "title": "Pipeline & Infrastructure Services",
+      "icon": "Layers",
+      "category": "Pipeline",
+      "shortDesc": "Construction, tie-in and integrity services for pipelines and infrastructure.",
+      "description": "From pipeline construction and tie-ins to integrity assessment and rehabilitation, our infrastructure teams support the full pipeline lifecycle for gathering, transmission and distribution systems."
+    },
+    {
+      "id": "sv10",
+      "slug": "marine-logistics-services",
+      "title": "Marine & Logistics Services",
+      "icon": "Anchor",
+      "category": "Marine",
+      "shortDesc": "Marine coordination, freight and project-cargo logistics.",
+      "description": "Meridian coordinates marine support vessels, freight forwarding and heavy-lift project-cargo logistics to keep offshore and remote-site operations supplied and on schedule."
+    },
+    {
+      "id": "sv11",
+      "slug": "industrial-construction",
+      "title": "Industrial Construction",
+      "icon": "HardHat",
+      "category": "Construction",
+      "shortDesc": "Civil, structural and mechanical construction for industrial facilities.",
+      "description": "Our construction division delivers civil, structural, mechanical and electrical construction for refineries, processing plants, terminals and industrial facilities from groundbreaking to mechanical completion."
+    },
+    {
+      "id": "sv12",
+      "slug": "procurement-supply-chain",
+      "title": "Procurement & Supply Chain",
+      "icon": "Container",
+      "category": "Procurement",
+      "shortDesc": "Global sourcing, expediting and supply-chain management.",
+      "description": "We manage global procurement, vendor qualification, expediting and freight coordination so materials and equipment reach your project site on schedule, wherever it is located."
+    },
+    {
+      "id": "sv13",
+      "slug": "inspection-marine-survey",
+      "title": "Inspection & Marine Survey Services",
+      "icon": "Radar",
+      "category": "Inspection",
+      "shortDesc": "Third-party inspection, condition and marine survey services.",
+      "description": "Our inspectors and marine surveyors provide independent condition, cargo, pre-purchase and compliance surveys for vessels, equipment and facilities on behalf of owners, underwriters and operators."
+    },
+    {
+      "id": "sv14",
+      "slug": "project-management",
+      "title": "Project Management",
+      "icon": "ClipboardList",
+      "category": "Project Management",
+      "shortDesc": "End-to-end project management from concept through close-out.",
+      "description": "Meridian's project management teams provide planning, cost control, scheduling and execution oversight across the full project lifecycle, integrating engineering, procurement and construction into one accountable delivery team."
+    }
+  ],
+  "projects": [
+    {
+      "id": "pr1",
+      "title": "Gulf of Mexico Platform Maintenance Program",
+      "country": "United States",
+      "location": "Gulf of Mexico, offshore Louisiana",
+      "client": "Independent E&P Operator",
+      "category": [
+        "Offshore",
+        "Maintenance"
+      ],
+      "description": "Multi-year preventive and corrective maintenance program covering rotating equipment, topside structures and safety systems across three fixed platforms.",
+      "startDate": "2024-03-01",
+      "completionDate": "",
+      "status": "Current",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Offshore Services",
+        "Equipment Maintenance & Repair"
+      ]
+    },
+    {
+      "id": "pr2",
+      "title": "West Africa Onshore Pipeline Construction",
+      "country": "Nigeria",
+      "location": "Niger Delta",
+      "client": "National Oil Company",
+      "category": [
+        "Onshore",
+        "Construction",
+        "Pipeline"
+      ],
+      "description": "Construction and tie-in of 42km of gathering pipeline connecting satellite wellheads to a central processing facility, including right-of-way clearance and HDD river crossings.",
+      "startDate": "2023-06-15",
+      "completionDate": "2025-01-20",
+      "status": "Completed",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Pipeline & Infrastructure Services",
+        "Industrial Construction"
+      ]
+    },
+    {
+      "id": "pr3",
+      "title": "Permian Basin Drilling Support Campaign",
+      "country": "United States",
+      "location": "Permian Basin, Texas",
+      "client": "Independent Operator",
+      "category": [
+        "Onshore"
+      ],
+      "description": "Rig-up/rig-down crews and well-site technical support across a 40-well multi-pad drilling campaign.",
+      "startDate": "2025-01-10",
+      "completionDate": "",
+      "status": "Current",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Drilling & Rig Support",
+        "Onshore Field Services"
+      ]
+    },
+    {
+      "id": "pr4",
+      "title": "North Sea Topsides Engineering Study",
+      "country": "United Kingdom",
+      "location": "Aberdeen / North Sea",
+      "client": "EPC Contractor",
+      "category": [
+        "Engineering",
+        "Offshore"
+      ],
+      "description": "FEED and detailed engineering study for a topsides modification and life-extension project on a North Sea platform.",
+      "startDate": "2022-09-01",
+      "completionDate": "2023-11-30",
+      "status": "Completed",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Engineering & Technical Services"
+      ]
+    },
+    {
+      "id": "pr5",
+      "title": "Middle East Refinery Turnaround",
+      "country": "United Arab Emirates",
+      "location": "Jebel Ali Industrial Zone",
+      "client": "Regional Refining Company",
+      "category": [
+        "Maintenance",
+        "Construction"
+      ],
+      "description": "Full-scope turnaround planning, execution and mechanical work for a major refinery unit shutdown, delivered ahead of schedule.",
+      "startDate": "2024-02-01",
+      "completionDate": "2024-05-15",
+      "status": "Completed",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Equipment Maintenance & Repair",
+        "Industrial Construction",
+        "Project Management"
+      ]
+    },
+    {
+      "id": "pr6",
+      "title": "Southeast Asia Equipment Supply Program",
+      "country": "Malaysia",
+      "location": "Kuala Lumpur / Offshore Sarawak",
+      "client": "National Energy Company",
+      "category": [
+        "Equipment Supply"
+      ],
+      "description": "Sourcing, inspection and delivery of wellhead equipment, valves and rotating machinery for a series of offshore development wells.",
+      "startDate": "2023-01-15",
+      "completionDate": "2024-06-30",
+      "status": "Completed",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Machinery & Equipment Supply",
+        "Procurement & Supply Chain"
+      ]
+    },
+    {
+      "id": "pr7",
+      "title": "Brazil Marine Logistics Support",
+      "country": "Brazil",
+      "location": "Rio de Janeiro / Campos Basin",
+      "client": "Offshore Operator Consortium",
+      "category": [
+        "Marine",
+        "Offshore"
+      ],
+      "description": "Ongoing marine coordination and project-cargo logistics support for deepwater platform supply operations.",
+      "startDate": "2025-04-01",
+      "completionDate": "",
+      "status": "Current",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Marine & Logistics Services"
+      ]
+    },
+    {
+      "id": "pr8",
+      "title": "North Africa Gas Processing Facility Inspection",
+      "country": "Egypt",
+      "location": "Western Desert",
+      "client": "Joint Venture Operator",
+      "category": [
+        "Inspection",
+        "Onshore"
+      ],
+      "description": "Third-party mechanical integrity inspection program across a gas processing facility ahead of a planned capacity expansion.",
+      "startDate": "2024-08-01",
+      "completionDate": "2024-12-10",
+      "status": "Completed",
+      "images": [],
+      "video": "",
+      "servicesProvided": [
+        "Inspection & Marine Survey Services"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "nw1",
+      "title": "Meridian Energy Services opens new Asia-Pacific regional office in Singapore",
+      "image": "",
+      "images": [],
+      "author": "Corporate Communications",
+      "date": "2026-07-14",
+      "category": "Company News",
+      "content": "Meridian Energy Services has opened a new regional office in Singapore, expanding our footprint across the Asia-Pacific region and strengthening local support for operators in Malaysia, Indonesia and beyond. The office will serve as a hub for engineering, procurement and field-service coordination across the region.",
+      "tags": [
+        "Expansion",
+        "Asia-Pacific"
+      ]
+    },
+    {
+      "id": "nw2",
+      "title": "Meridian awarded multi-year maintenance contract in the Gulf of Mexico",
+      "image": "",
+      "images": [],
+      "author": "Corporate Communications",
+      "date": "2026-06-02",
+      "category": "New Contracts",
+      "content": "We are pleased to announce a new multi-year contract to provide preventive and corrective maintenance services across three offshore platforms in the Gulf of Mexico, building on more than a decade of offshore maintenance experience in the region.",
+      "tags": [
+        "New Contract",
+        "Offshore",
+        "North America"
+      ]
+    },
+    {
+      "id": "nw3",
+      "title": "West Africa pipeline project reaches mechanical completion",
+      "image": "",
+      "images": [],
+      "author": "Project Delivery Team",
+      "date": "2026-04-22",
+      "category": "Completed Project",
+      "content": "The 42km onshore gathering pipeline project in the Niger Delta has reached mechanical completion, on schedule and with an outstanding safety record across more than 1.2 million work-hours.",
+      "tags": [
+        "Project Update",
+        "West Africa",
+        "Pipeline"
+      ]
+    },
+    {
+      "id": "nw4",
+      "title": "Meridian crews complete refinery turnaround ahead of schedule",
+      "image": "",
+      "images": [],
+      "author": "Operations",
+      "date": "2026-03-10",
+      "category": "Completed Project",
+      "content": "Our turnaround team completed a major refinery unit shutdown in the UAE five days ahead of schedule, with zero recordable incidents across the full scope of work.",
+      "tags": [
+        "Middle East",
+        "Maintenance",
+        "Safety"
+      ]
+    },
+    {
+      "id": "nw5",
+      "title": "Safety milestone: one year without a lost-time incident across offshore operations",
+      "image": "",
+      "images": [],
+      "author": "HSE Department",
+      "date": "2026-01-28",
+      "category": "Safety Achievement",
+      "content": "Meridian's offshore operations division has completed a full year without a lost-time incident, reflecting the consistent application of our HSE management system across every platform we serve.",
+      "tags": [
+        "Safety",
+        "Milestone"
+      ]
+    },
+    {
+      "id": "nw6",
+      "title": "Meridian sponsors regional engineering scholarship program",
+      "image": "",
+      "images": [],
+      "author": "Corporate Communications",
+      "date": "2025-11-05",
+      "category": "Employee & Company Events",
+      "content": "We have launched a scholarship program supporting engineering students in the communities where we operate, part of our ongoing commitment to local workforce development.",
+      "tags": [
+        "Community",
+        "Workforce Development"
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "id": "em1",
+      "name": "Add your first executive",
+      "photo": "",
+      "position": "Chief Executive Officer",
+      "department": "Executive Management",
+      "region": "North America",
+      "bio": "Edit this profile from the Admin Dashboard to add real leadership biography, background and career highlights.",
+      "certifications": [],
+      "yearsExperience": 28
+    },
+    {
+      "id": "em2",
+      "name": "Add a director",
+      "photo": "",
+      "position": "VP, Engineering",
+      "department": "Engineering",
+      "region": "North America",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [
+        "PE"
+      ],
+      "yearsExperience": 22
+    },
+    {
+      "id": "em3",
+      "name": "Add operations lead",
+      "photo": "",
+      "position": "Director of Operations",
+      "department": "Operations",
+      "region": "Middle East",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [],
+      "yearsExperience": 19
+    },
+    {
+      "id": "em4",
+      "name": "Add offshore superintendent",
+      "photo": "",
+      "position": "Offshore Installation Manager",
+      "department": "Offshore Personnel",
+      "region": "North America",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [
+        "OPITO",
+        "BOSIET"
+      ],
+      "yearsExperience": 17
+    },
+    {
+      "id": "em5",
+      "name": "Add field supervisor",
+      "photo": "",
+      "position": "Field Operations Supervisor",
+      "department": "Field Personnel",
+      "region": "West Africa",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [],
+      "yearsExperience": 14
+    },
+    {
+      "id": "em6",
+      "name": "Add project manager",
+      "photo": "",
+      "position": "Senior Project Manager",
+      "department": "Project Management",
+      "region": "Asia-Pacific",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [
+        "PMP"
+      ],
+      "yearsExperience": 16
+    },
+    {
+      "id": "em7",
+      "name": "Add admin lead",
+      "photo": "",
+      "position": "Head of Administration",
+      "department": "Administration",
+      "region": "North America",
+      "bio": "Edit this profile from the Admin Dashboard.",
+      "certifications": [],
+      "yearsExperience": 12
+    }
+  ],
+  "gallery": [],
+  "locations": [
+    {
+      "id": "lc1",
+      "type": "Headquarters",
+      "region": "North America",
+      "country": "United States",
+      "city": "Houston, Texas",
+      "address": "1400 Energy Corridor Blvd, Houston, TX 77079",
+      "phone": "+1 (713) 555-0142",
+      "email": "info@meridianenergyservices.com"
+    },
+    {
+      "id": "lc2",
+      "type": "Regional Office",
+      "region": "South America",
+      "country": "Brazil",
+      "city": "Rio de Janeiro",
+      "address": "Av. Rio Branco 1, Rio de Janeiro, RJ",
+      "phone": "+55 21 5555-0100",
+      "email": "southamerica@meridianenergyservices.com"
+    },
+    {
+      "id": "lc3",
+      "type": "Regional Office",
+      "region": "Europe",
+      "country": "United Kingdom",
+      "city": "Aberdeen",
+      "address": "1 Union Terrace, Aberdeen AB10",
+      "phone": "+44 1224 555 010",
+      "email": "europe@meridianenergyservices.com"
+    },
+    {
+      "id": "lc4",
+      "type": "Regional Office",
+      "region": "Middle East",
+      "country": "Jordan",
+      "city": "Amman",
+      "address": "King Hussein Business Park, Amman",
+      "phone": "+962 6 555 0100",
+      "email": "jordan@meridianenergyservices.com"
+    },
+    {
+      "id": "lc5",
+      "type": "Regional Office",
+      "region": "North Africa",
+      "country": "Egypt",
+      "city": "Cairo",
+      "address": "12 Corniche El Nil, Maadi, Cairo",
+      "phone": "+20 2 5555 0100",
+      "email": "northafrica@meridianenergyservices.com"
+    },
+    {
+      "id": "lc6",
+      "type": "Regional Office",
+      "region": "Middle East",
+      "country": "United Arab Emirates",
+      "city": "Dubai",
+      "address": "Jebel Ali Free Zone, Dubai",
+      "phone": "+971 4 555 0100",
+      "email": "middleeast@meridianenergyservices.com"
+    },
+    {
+      "id": "lc7",
+      "type": "Regional Office",
+      "region": "Asia-Pacific",
+      "country": "Singapore",
+      "city": "Singapore",
+      "address": "1 Marina Boulevard, Singapore 018989",
+      "phone": "+65 6555 0100",
+      "email": "asiapacific@meridianenergyservices.com"
+    },
+    {
+      "id": "lc8",
+      "type": "Regional Office",
+      "region": "Middle East",
+      "country": "Oman",
+      "city": "Muscat",
+      "address": "Building 12, Al Ghubrah, Muscat",
+      "phone": "+968 24 555 010",
+      "email": "oman@meridianenergyservices.com"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "jb1",
+      "title": "Offshore Installation Manager",
+      "location": "Gulf of Mexico, USA",
+      "department": "Offshore Personnel",
+      "type": "Rotational",
+      "description": "Lead offshore platform operations, ensuring safe and efficient execution of maintenance and production support activities.",
+      "requirements": "10+ years offshore experience, OIM certification, valid offshore survival and medical certificates.",
+      "deadline": "2026-10-30",
+      "status": "Open"
+    },
+    {
+      "id": "jb2",
+      "title": "Drilling Engineer",
+      "location": "Houston, USA",
+      "department": "Engineering",
+      "type": "Full-Time",
+      "description": "Support well planning, drilling program design and on-site technical assistance for onshore drilling campaigns.",
+      "requirements": "BSc Petroleum or Mechanical Engineering, 5+ years drilling engineering experience.",
+      "deadline": "2026-10-15",
+      "status": "Open"
+    },
+    {
+      "id": "jb3",
+      "title": "Pipeline Construction Supervisor",
+      "location": "Muscat, Oman",
+      "department": "Field Personnel",
+      "type": "Contract",
+      "description": "Supervise pipeline construction crews, ensuring adherence to schedule, quality and HSE standards.",
+      "requirements": "8+ years pipeline construction experience, NEBOSH certification preferred.",
+      "deadline": "2026-11-05",
+      "status": "Open"
+    },
+    {
+      "id": "jb4",
+      "title": "Procurement Specialist",
+      "location": "Singapore",
+      "department": "Administration",
+      "type": "Full-Time",
+      "description": "Manage vendor qualification, purchase orders and expediting for regional equipment supply projects.",
+      "requirements": "Bachelor's degree, 4+ years procurement experience in oil & gas or industrial sectors.",
+      "deadline": "2026-10-20",
+      "status": "Open"
+    },
+    {
+      "id": "jb5",
+      "title": "HSE Advisor",
+      "location": "Dubai, UAE",
+      "department": "Operations",
+      "type": "Full-Time",
+      "description": "Support HSE program implementation across regional field operations, including audits, training and incident investigation.",
+      "requirements": "NEBOSH Diploma, 6+ years HSE experience in oil & gas contracting.",
+      "deadline": "2026-11-15",
+      "status": "Open"
+    }
+  ],
+  "applications": [],
+  "inquiries": [],
+  "clients": [
+    {
+      "id": "cl1",
+      "name": "Continental Basin Energy",
+      "logo": "",
+      "type": "Client"
+    },
+    {
+      "id": "cl2",
+      "name": "Northstar E&P",
+      "logo": "",
+      "type": "Client"
+    },
+    {
+      "id": "cl3",
+      "name": "Atlas EPC Group",
+      "logo": "",
+      "type": "Partner"
+    },
+    {
+      "id": "cl4",
+      "name": "Delta Rig Systems",
+      "logo": "",
+      "type": "Supplier"
+    },
+    {
+      "id": "cl5",
+      "name": "Harborline Marine",
+      "logo": "",
+      "type": "Partner"
+    },
+    {
+      "id": "cl6",
+      "name": "Ferrotech Industrial",
+      "logo": "",
+      "type": "Supplier"
+    },
+    {
+      "id": "cl7",
+      "name": "Gulfstream Refining Co.",
+      "logo": "",
+      "type": "Client"
+    },
+    {
+      "id": "cl8",
+      "name": "Beacon Subsea Solutions",
+      "logo": "",
+      "type": "Partner"
+    }
+  ],
+  "staff": [
+    {
+      "id": "st1",
+      "name": "Demo Staff Account",
+      "email": "staff@meridianenergyservices.com",
+      "code": "meridianstaff2026",
+      "department": "Operations",
+      "permissions": {
+        "news": true,
+        "projects": true,
+        "employees": true,
+        "gallery": true
+      },
+      "active": true
+    }
+  ],
+  "submissions": []
+}

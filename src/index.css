@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ink: #05070a;
+  --navy: #0a1220;
+  --navy-2: #0f1b2e;
+  --steel: #1b2432;
+  --accent: #e8a33d;
+  --accent-2: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #05070a;
+}
+
+.font-display { font-family: 'Sora', 'Inter', sans-serif; }
+.font-sans { font-family: 'Inter', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes driftX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-22px); }
+  100% { transform: translateX(0); }
+}
+.mrd-drift { animation: driftX 16s ease-in-out infinite; }
+
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.mrd-float { animation: floatY 5s ease-in-out infinite; }
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.85; }
+}
+.mrd-pulse { animation: pulseGlow 3.2s ease-in-out infinite; }
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.mrd-marquee { animation: marqueeScroll 28s linear infinite; }
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mrd-spin-slow { animation: spinSlow 40s linear infinite; }
+
+@keyframes loaderBar {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.mrd-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+.mrd-scrollbar::-webkit-scrollbar-thumb { background: #33404f; border-radius: 4px; }
+
+.mrd-grain {
+  background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
