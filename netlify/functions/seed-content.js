@@ -517,7 +517,6 @@ export default {
       "country": "United States",
       "city": "Houston, Texas",
       "address": "1400 Energy Corridor Blvd, Houston, TX 77079",
-      "phone": "+1 (713) 555-0142",
       "email": "info@meridianenergyservices.com"
     },
     {
@@ -527,7 +526,6 @@ export default {
       "country": "Brazil",
       "city": "Rio de Janeiro",
       "address": "Av. Rio Branco 1, Rio de Janeiro, RJ",
-      "phone": "+55 21 5555-0100",
       "email": "southamerica@meridianenergyservices.com"
     },
     {
@@ -537,7 +535,6 @@ export default {
       "country": "United Kingdom",
       "city": "Aberdeen",
       "address": "1 Union Terrace, Aberdeen AB10",
-      "phone": "+44 1224 555 010",
       "email": "europe@meridianenergyservices.com"
     },
     {
@@ -547,7 +544,6 @@ export default {
       "country": "Jordan",
       "city": "Amman",
       "address": "King Hussein Business Park, Amman",
-      "phone": "+962 6 555 0100",
       "email": "jordan@meridianenergyservices.com"
     },
     {
@@ -557,7 +553,6 @@ export default {
       "country": "Egypt",
       "city": "Cairo",
       "address": "12 Corniche El Nil, Maadi, Cairo",
-      "phone": "+20 2 5555 0100",
       "email": "northafrica@meridianenergyservices.com"
     },
     {
@@ -567,7 +562,6 @@ export default {
       "country": "United Arab Emirates",
       "city": "Dubai",
       "address": "Jebel Ali Free Zone, Dubai",
-      "phone": "+971 4 555 0100",
       "email": "middleeast@meridianenergyservices.com"
     },
     {
@@ -577,7 +571,6 @@ export default {
       "country": "Singapore",
       "city": "Singapore",
       "address": "1 Marina Boulevard, Singapore 018989",
-      "phone": "+65 6555 0100",
       "email": "asiapacific@meridianenergyservices.com"
     },
     {
@@ -587,7 +580,6 @@ export default {
       "country": "Oman",
       "city": "Muscat",
       "address": "Building 12, Al Ghubrah, Muscat",
-      "phone": "+968 24 555 010",
       "email": "oman@meridianenergyservices.com"
     }
   ],

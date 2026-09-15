@@ -1,7 +1,7 @@
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/Reveal";
 import { useContent } from "../lib/ContentContext";
-import { MapPin, Phone, Mail, Building2 } from "lucide-react";
+import { MapPin, Mail, Building2 } from "lucide-react";
 
 export default function GlobalOperations() {
   const { content } = useContent();
@@ -40,12 +40,11 @@ export default function GlobalOperations() {
         </Reveal>
         {hq && (
           <Reveal delay={60}>
-            <div className="border border-amber-500/30 bg-amber-400/5 rounded-md p-6 mb-14 grid sm:grid-cols-3 gap-6">
+            <div className="border border-amber-500/30 bg-amber-400/5 rounded-md p-6 mb-14 grid sm:grid-cols-2 gap-6">
               <div>
                 <div className="font-display text-white text-lg mb-2">{hq.city}, {hq.country}</div>
                 <div className="text-sm text-slate-400 flex items-start gap-2"><MapPin size={14} className="mt-0.5 shrink-0" /> {hq.address}</div>
               </div>
-              <div className="text-sm text-slate-400 flex items-center gap-2"><Phone size={14} /> {hq.phone}</div>
               <div className="text-sm text-slate-400 flex items-center gap-2 break-all"><Mail size={14} className="shrink-0" /> {hq.email}</div>
             </div>
           </Reveal>
@@ -65,7 +64,6 @@ export default function GlobalOperations() {
                 <div className="text-xs text-slate-500 mb-4">{l.country}</div>
                 <div className="text-xs text-slate-500 space-y-1.5">
                   <div className="flex items-start gap-1.5"><MapPin size={12} className="mt-0.5 shrink-0" /> {l.address}</div>
-                  <div className="flex items-center gap-1.5"><Phone size={12} /> {l.phone}</div>
                   <div className="flex items-center gap-1.5 break-all"><Mail size={12} className="shrink-0" /> {l.email}</div>
                 </div>
               </div>

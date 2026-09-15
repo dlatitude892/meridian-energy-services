@@ -125,14 +125,14 @@ export const DEFAULT_CONTENT = {
   gallery: [],
 
   locations: [
-    { id: "lc1", type: "Headquarters", region: "North America", country: "United States", city: "Houston, Texas", address: "1400 Energy Corridor Blvd, Houston, TX 77079", phone: "+1 (713) 555-0142", email: "info@meridianenergyservices.com" },
-    { id: "lc2", type: "Regional Office", region: "South America", country: "Brazil", city: "Rio de Janeiro", address: "Av. Rio Branco 1, Rio de Janeiro, RJ", phone: "+55 21 5555-0100", email: "southamerica@meridianenergyservices.com" },
-    { id: "lc3", type: "Regional Office", region: "Europe", country: "United Kingdom", city: "Aberdeen", address: "1 Union Terrace, Aberdeen AB10", phone: "+44 1224 555 010", email: "europe@meridianenergyservices.com" },
-    { id: "lc4", type: "Regional Office", region: "Middle East", country: "Jordan", city: "Amman", address: "King Hussein Business Park, Amman", phone: "+962 6 555 0100", email: "jordan@meridianenergyservices.com" },
-    { id: "lc5", type: "Regional Office", region: "North Africa", country: "Egypt", city: "Cairo", address: "12 Corniche El Nil, Maadi, Cairo", phone: "+20 2 5555 0100", email: "northafrica@meridianenergyservices.com" },
-    { id: "lc6", type: "Regional Office", region: "Middle East", country: "United Arab Emirates", city: "Dubai", address: "Jebel Ali Free Zone, Dubai", phone: "+971 4 555 0100", email: "middleeast@meridianenergyservices.com" },
-    { id: "lc7", type: "Regional Office", region: "Asia-Pacific", country: "Singapore", city: "Singapore", address: "1 Marina Boulevard, Singapore 018989", phone: "+65 6555 0100", email: "asiapacific@meridianenergyservices.com" },
-    { id: "lc8", type: "Regional Office", region: "Middle East", country: "Oman", city: "Muscat", address: "Building 12, Al Ghubrah, Muscat", phone: "+968 24 555 010", email: "oman@meridianenergyservices.com" },
+    { id: "lc1", type: "Headquarters", region: "North America", country: "United States", city: "Houston, Texas", address: "1400 Energy Corridor Blvd, Houston, TX 77079", email: "info@meridianenergyservices.com" },
+    { id: "lc2", type: "Regional Office", region: "South America", country: "Brazil", city: "Rio de Janeiro", address: "Av. Rio Branco 1, Rio de Janeiro, RJ", email: "southamerica@meridianenergyservices.com" },
+    { id: "lc3", type: "Regional Office", region: "Europe", country: "United Kingdom", city: "Aberdeen", address: "1 Union Terrace, Aberdeen AB10", email: "europe@meridianenergyservices.com" },
+    { id: "lc4", type: "Regional Office", region: "Middle East", country: "Jordan", city: "Amman", address: "King Hussein Business Park, Amman", email: "jordan@meridianenergyservices.com" },
+    { id: "lc5", type: "Regional Office", region: "North Africa", country: "Egypt", city: "Cairo", address: "12 Corniche El Nil, Maadi, Cairo", email: "northafrica@meridianenergyservices.com" },
+    { id: "lc6", type: "Regional Office", region: "Middle East", country: "United Arab Emirates", city: "Dubai", address: "Jebel Ali Free Zone, Dubai", email: "middleeast@meridianenergyservices.com" },
+    { id: "lc7", type: "Regional Office", region: "Asia-Pacific", country: "Singapore", city: "Singapore", address: "1 Marina Boulevard, Singapore 018989", email: "asiapacific@meridianenergyservices.com" },
+    { id: "lc8", type: "Regional Office", region: "Middle East", country: "Oman", city: "Muscat", address: "Building 12, Al Ghubrah, Muscat", email: "oman@meridianenergyservices.com" },
   ],
 
   jobs: [

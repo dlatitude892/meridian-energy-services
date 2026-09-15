@@ -123,10 +123,9 @@ export const COLLECTIONS = {
       { key: "country", label: "Country", type: "text" },
       { key: "city", label: "City", type: "text" },
       { key: "address", label: "Address", type: "text" },
-      { key: "phone", label: "Phone", type: "text" },
       { key: "email", label: "Email", type: "text" },
     ],
-    empty: { type: "Regional Office", region: REGIONS[0], country: "", city: "", address: "", phone: "", email: "" },
+    empty: { type: "Regional Office", region: REGIONS[0], country: "", city: "", address: "", email: "" },
   },
 
   jobs: {
