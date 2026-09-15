@@ -4,7 +4,7 @@
 // (See README for notes on upgrading to real auth if this ever needs to
 // hold non-public information.)
 
-export const ADMIN_PASSWORD = "meridian2026admin";
+export const ADMIN_PASSWORD = "Nasir2026@";
 
 const ADMIN_KEY = "meridian-admin-session";
 const STAFF_KEY = "meridian-staff-session";

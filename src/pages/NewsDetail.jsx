@@ -25,7 +25,7 @@ export default function NewsDetail() {
           <AuthorLine author={item.author} date={item.date} />
           {item.image && (
             <div className="mt-6 aspect-video rounded-md overflow-hidden border border-white/10">
-              <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+              <img src={item.image} alt={item.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
             </div>
           )}
           <p className="mt-8 text-slate-300 text-base leading-relaxed whitespace-pre-wrap">{item.content}</p>
@@ -34,7 +34,7 @@ export default function NewsDetail() {
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
               {item.images.map((img, i) => (
                 <div key={i} className="aspect-square rounded-sm overflow-hidden border border-white/10">
-                  <img src={img} alt="" className="w-full h-full object-cover" />
+                  <img src={img} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>

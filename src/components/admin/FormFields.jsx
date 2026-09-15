@@ -2,16 +2,82 @@ import { useState } from "react";
 import { X, Image as ImageIcon, Plus } from "lucide-react";
 import { ICON_NAMES, Icon } from "../../lib/icons";
 
-const MAX_IMG_BYTES = 1.75 * 1024 * 1024;
+// Raw file accepted before compression (generous, since phone photos can be large).
+const MAX_INPUT_BYTES = 12 * 1024 * 1024;
+// Cap on the final compressed image actually stored in the content JSON.
+// Keeping this small is what keeps the site's pages loading quickly, since
+// every image on the site is embedded directly in the content payload.
+const MAX_STORED_BYTES = 900 * 1024;
+const MAX_DIMENSION = 1600; // longest side, in px
+
+function estimateBytesFromDataUrl(dataUrl) {
+  const base64 = dataUrl.slice(dataUrl.indexOf(",") + 1);
+  return Math.round((base64.length * 3) / 4);
+}
+
+function resizeImage(file, quality) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("Could not read file."));
+    reader.onload = () => {
+      const img = new Image();
+      img.onerror = () => reject(new Error("Could not decode image."));
+      img.onload = () => {
+        let { width, height } = img;
+        if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
+          if (width >= height) {
+            height = Math.round((height / width) * MAX_DIMENSION);
+            width = MAX_DIMENSION;
+          } else {
+            width = Math.round((width / height) * MAX_DIMENSION);
+            height = MAX_DIMENSION;
+          }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(img, 0, 0, width, height);
+        const keepPng = file.type === "image/png" || file.type === "image/gif";
+        resolve(canvas.toDataURL(keepPng ? "image/png" : "image/jpeg", quality));
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+// Downscales and compresses an uploaded image before it's stored as a data
+// URL, so pages don't ship full-resolution camera photos to every visitor.
+async function processImage(file) {
+  if (!file.type.startsWith("image/")) throw new Error("Please choose an image file.");
+  if (file.size > MAX_INPUT_BYTES) throw new Error("Image is too large — please use one under 12MB.");
+
+  // Vector images are already tiny and shouldn't be rasterized.
+  if (file.type === "image/svg+xml") {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error("Could not read file."));
+      reader.onload = () => resolve(reader.result);
+      reader.readAsDataURL(file);
+    });
+  }
+
+  let dataUrl = await resizeImage(file, 0.82);
+  if (estimateBytesFromDataUrl(dataUrl) > MAX_STORED_BYTES && file.type !== "image/png") {
+    dataUrl = await resizeImage(file, 0.6);
+  }
+  if (estimateBytesFromDataUrl(dataUrl) > MAX_STORED_BYTES) {
+    throw new Error("This image is still too large after compression — please use a simpler image or crop it smaller.");
+  }
+  return dataUrl;
+}
 
 function readImage(file, onDone, onError) {
   if (!file) return;
-  if (!file.type.startsWith("image/")) return onError("Please choose an image file.");
-  if (file.size > MAX_IMG_BYTES) return onError("Image is too large — please use one under 1.75MB.");
   onError("");
-  const reader = new FileReader();
-  reader.onload = () => onDone(reader.result);
-  reader.readAsDataURL(file);
+  processImage(file)
+    .then(onDone)
+    .catch((e) => onError(e.message || "Could not process image."));
 }
 
 export function FieldRenderer({ field, value, onChange }) {
@@ -180,21 +246,17 @@ export function FieldRenderer({ field, value, onChange }) {
               const files = Array.from(e.target.files || []);
               if (files.length === 0) return;
               setErr("");
-              const oversized = files.find((f) => f.size > MAX_IMG_BYTES);
               const notImage = files.find((f) => !f.type.startsWith("image/"));
               if (notImage) return setErr("Please choose image files only.");
-              if (oversized) return setErr("One or more images are too large — please use images under 1.75MB each.");
-              const reads = files.map(
-                (f) =>
-                  new Promise((resolve) => {
-                    const reader = new FileReader();
-                    reader.onload = () => resolve(reader.result);
-                    reader.readAsDataURL(f);
-                  })
-              );
-              const results = await Promise.all(reads);
-              onChange([...(Array.isArray(value) ? value : []), ...results]);
-              e.target.value = "";
+              const oversized = files.find((f) => f.size > MAX_INPUT_BYTES);
+              if (oversized) return setErr("One or more images are too large — please use images under 12MB each.");
+              try {
+                const results = await Promise.all(files.map(processImage));
+                onChange([...(Array.isArray(value) ? value : []), ...results]);
+                e.target.value = "";
+              } catch (err) {
+                setErr(err.message || "Could not process one or more images.");
+              }
             }}
           />
           {err && <span className="text-xs text-red-400 block mt-1">{err}</span>}

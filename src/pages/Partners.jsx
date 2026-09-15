@@ -36,7 +36,7 @@ export default function Partners() {
             <Reveal key={c.id} delay={i * 40}>
               <div className="border border-white/10 bg-white/[0.02] rounded-md p-6 h-32 flex flex-col items-center justify-center text-center hover:border-amber-500/40 transition-colors">
                 {c.logo ? (
-                  <img src={c.logo} alt={c.name} className="max-h-10 max-w-full object-contain mb-2" />
+                  <img src={c.logo} alt={c.name} loading="lazy" decoding="async" className="max-h-10 max-w-full object-contain mb-2" />
                 ) : (
                   <div className="font-display text-white text-lg mb-1">{c.name}</div>
                 )}
