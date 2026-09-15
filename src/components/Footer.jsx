@@ -67,7 +67,6 @@ export function Footer({ content }) {
           <div>
             <div className="text-xs font-mono tracking-widest text-slate-200 mb-4">CONTACT</div>
             <ul className="space-y-2 text-sm">
-              <li>{s.contact?.hqPhone}</li>
               <li className="break-all">{s.contact?.hqEmail}</li>
               <li className="pt-1"><Link to="/contact" className="hover:text-amber-400">Contact Us →</Link></li>
             </ul>

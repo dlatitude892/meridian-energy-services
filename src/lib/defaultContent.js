@@ -67,7 +67,6 @@ export const DEFAULT_CONTENT = {
     footerText:
       "Meridian Energy Services delivers integrated oil & gas contracting, engineering, equipment supply and field services to operators across six continents.",
     contact: {
-      hqPhone: "+1 (713) 555-0142",
       hqEmail: "info@meridianenergyservices.com",
       projectsEmail: "projects@meridianenergyservices.com",
       vendorEmail: "procurement@meridianenergyservices.com",

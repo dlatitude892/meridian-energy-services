@@ -31,7 +31,6 @@ export default {
     "safety": "Safety is the foundation of everything Meridian Energy Services does. Our HSE management system is built around proactive hazard identification, rigorous permit-to-work controls, continuous crew training and certification, and a company-wide stop-work authority that empowers every employee to halt any activity they believe is unsafe. We track leading and lagging indicators across all regions, conduct regular audits of contractors and subcontractors, and hold every site — offshore platform, onshore field, workshop, or warehouse — to the same uncompromising standard.",
     "footerText": "Meridian Energy Services delivers integrated oil & gas contracting, engineering, equipment supply and field services to operators across six continents.",
     "contact": {
-      "hqPhone": "+1 (713) 555-0142",
       "hqEmail": "info@meridianenergyservices.com",
       "projectsEmail": "projects@meridianenergyservices.com",
       "vendorEmail": "procurement@meridianenergyservices.com",

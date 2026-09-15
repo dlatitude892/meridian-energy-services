@@ -291,7 +291,6 @@ function SettingsPanel({ content, save }) {
       <div>
         <div className="font-display text-white text-lg mb-4">Contact Details</div>
         <div className="grid sm:grid-cols-2 gap-3">
-          <div><label className={labelCls}>HQ Phone</label><input className={inputCls} value={form.contact.hqPhone} onChange={(e) => setContact("hqPhone", e.target.value)} /></div>
           <div><label className={labelCls}>HQ Email</label><input className={inputCls} value={form.contact.hqEmail} onChange={(e) => setContact("hqEmail", e.target.value)} /></div>
           <div><label className={labelCls}>Projects Email</label><input className={inputCls} value={form.contact.projectsEmail} onChange={(e) => setContact("projectsEmail", e.target.value)} /></div>
           <div><label className={labelCls}>Vendor Email</label><input className={inputCls} value={form.contact.vendorEmail} onChange={(e) => setContact("vendorEmail", e.target.value)} /></div>

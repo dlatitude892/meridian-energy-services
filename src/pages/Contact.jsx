@@ -4,7 +4,7 @@ import { Reveal } from "../components/Reveal";
 import { useContent } from "../lib/ContentContext";
 import { newId } from "../lib/useSiteContent";
 import { INQUIRY_TYPES } from "../lib/defaultContent";
-import { MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
+import { MapPin, Mail, CheckCircle2 } from "lucide-react";
 
 export default function Contact() {
   const { content, save } = useContent();
@@ -40,7 +40,6 @@ export default function Contact() {
           <div className="font-mono text-xs tracking-widest text-amber-400 mb-4">HEADQUARTERS</div>
           <div className="space-y-3 text-sm text-slate-300 mb-10">
             <div className="flex items-start gap-2.5"><MapPin size={15} className="mt-0.5 text-amber-400 shrink-0" /> {content.locations[0]?.address}</div>
-            <div className="flex items-center gap-2.5"><Phone size={15} className="text-amber-400 shrink-0" /> {s.contact?.hqPhone}</div>
             <div className="flex items-center gap-2.5 break-all"><Mail size={15} className="text-amber-400 shrink-0" /> {s.contact?.hqEmail}</div>
           </div>
 
