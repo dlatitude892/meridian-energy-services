@@ -7,8 +7,8 @@ const MAX_INPUT_BYTES = 12 * 1024 * 1024;
 // Cap on the final compressed image actually stored in the content JSON.
 // Keeping this small is what keeps the site's pages loading quickly, since
 // every image on the site is embedded directly in the content payload.
-const MAX_STORED_BYTES = 900 * 1024;
-const MAX_DIMENSION = 1600; // longest side, in px
+const MAX_STORED_BYTES = 450 * 1024;
+const MAX_DIMENSION = 1280; // longest side, in px
 
 function estimateBytesFromDataUrl(dataUrl) {
   const base64 = dataUrl.slice(dataUrl.indexOf(",") + 1);
