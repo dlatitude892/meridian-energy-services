@@ -33,7 +33,7 @@ export function ProjectCard({ project, delay = 0 }) {
       >
         <div className="aspect-[16/10] bg-gradient-to-br from-[#101c30] to-[#0a1220] relative overflow-hidden">
           {img ? (
-            <img src={img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src={img} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           ) : (
             <div className="absolute inset-0 flex items-center justify-center text-slate-700">
               <Icon name="Factory" size={36} strokeWidth={1} />
@@ -98,7 +98,7 @@ export function EmployeeCard({ person, delay = 0 }) {
     <Reveal delay={delay}>
       <div className="border border-white/10 bg-white/[0.02] rounded-md p-6 h-full hover:border-amber-500/40 transition-colors">
         {person.photo ? (
-          <img src={person.photo} alt={person.name} className="w-16 h-16 rounded-full object-cover mb-4 border border-white/10" />
+          <img src={person.photo} alt={person.name} loading="lazy" decoding="async" className="w-16 h-16 rounded-full object-cover mb-4 border border-white/10" />
         ) : (
           <div className="w-14 h-14 rounded-full bg-amber-400/10 text-amber-400 flex items-center justify-center font-display text-base mb-4">
             {person.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}

@@ -33,7 +33,7 @@ export default function ProjectDetail() {
                   <div className="flex gap-2 mt-3">
                     {project.images.map((img, i) => (
                       <button key={i} onClick={() => setActiveImg(i)} className={`w-16 h-16 rounded-sm overflow-hidden border ${i === activeImg ? "border-amber-400" : "border-white/10"}`}>
-                        <img src={img} alt="" className="w-full h-full object-cover" />
+                        <img src={img} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
                       </button>
                     ))}
                   </div>

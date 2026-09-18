@@ -42,7 +42,7 @@ export default function Gallery() {
             {items.map((g, i) => (
               <Reveal key={g.id} delay={i * 35} className="mb-4 break-inside-avoid">
                 <div className="group relative overflow-hidden rounded-md border border-white/10 bg-[#0a1220]">
-                  <img src={g.photo} alt={g.caption} className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={g.photo} alt={g.caption} loading="lazy" decoding="async" className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
                     <span className="text-[10px] font-mono text-amber-400 tracking-wide">{g.category}</span>
                     {g.caption && <p className="text-white text-xs mt-0.5">{g.caption}</p>}
