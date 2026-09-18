@@ -27,13 +27,13 @@ export default function ProjectDetail() {
             {project.images?.length > 0 ? (
               <div className="mb-8">
                 <div className="aspect-video rounded-md overflow-hidden border border-white/10 bg-[#0a1220]">
-                  <img src={project.images[activeImg]} alt={project.title} loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                  <img src={project.images[activeImg]} alt={project.title} className="w-full h-full object-cover" />
                 </div>
                 {project.images.length > 1 && (
                   <div className="flex gap-2 mt-3">
                     {project.images.map((img, i) => (
                       <button key={i} onClick={() => setActiveImg(i)} className={`w-16 h-16 rounded-sm overflow-hidden border ${i === activeImg ? "border-amber-400" : "border-white/10"}`}>
-                        <img src={img} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+                        <img src={img} alt="" className="w-full h-full object-cover" />
                       </button>
                     ))}
                   </div>
